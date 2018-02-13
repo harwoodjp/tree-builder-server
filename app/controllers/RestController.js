@@ -1,0 +1,1 @@
+exports.index = (req, res) => res.end("Hello")

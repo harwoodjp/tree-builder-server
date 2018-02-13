@@ -16,10 +16,6 @@ module.exports = app => {
 	const viewsFolder = path.join(__dirname).replace("config/server", "app/views");
 	app.set('views', viewsFolder)
 
-	/* set template engine */
-	require('lodash-express')(app, 'html'); 
-	app.set('view engine', 'html');
-
 	/* set body parser for post requests */
 	app.use(bodyParser.json())
 
